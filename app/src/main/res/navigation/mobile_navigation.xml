@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.smartcity1125.ui.home.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_newsinit"
+            app:destination="@id/newsinit"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_navigation_home_to_severinitFragment"
+            app:destination="@id/severinitFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.smartcity1125.ui.dashboard.DashboardFragment"
+        android:label="全部服务"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_severinitFragment"
+            app:destination="@id/severinitFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.smartcity1125.ui.notifications.NotificationsFragment"
+        android:label="智慧建党"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.smartcity1125.ui.news.newsFragment"
+        android:label="新闻"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_nav_news_to_newsinit"
+            app:destination="@id/newsinit" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_me"
+        android:name="com.example.smartcity1125.ui.me.meFragment"
+        android:label="个人"
+        tools:layout="@layout/fragment_me" >
+        <action
+            android:id="@+id/action_nav_me_to_xinxiFragment"
+            app:destination="@id/xinxiFragment" />
+        <action
+            android:id="@+id/action_nav_me_to_yijianFragment"
+            app:destination="@id/yijianFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsinit"
+        android:name="com.example.smartcity1125.ui.news.newsinit"
+        android:label="新闻详细"
+        tools:layout="@layout/fragment_newsinit" />
+    <fragment
+        android:id="@+id/xinxiFragment"
+        android:name="com.example.smartcity1125.ui.me.xinxiFragment"
+        android:label="个人设置"
+        tools:layout="@layout/fragment_xinxi" />
+    <fragment
+        android:id="@+id/yijianFragment"
+        android:name="com.example.smartcity1125.ui.me.yijianFragment"
+        android:label="意见反馈"
+        tools:layout="@layout/fragment_yijian" />
+    <fragment
+        android:id="@+id/severinitFragment"
+        android:name="com.example.smartcity1125.ui.dashboard.bus.bashiFragment"
+        android:label="智慧巴士"
+        tools:layout="@layout/fragment_severinit" >
+        <action
+            android:id="@+id/action_severinitFragment_to_businitFragment"
+            app:destination="@id/businitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/businitFragment"
+        android:name="com.example.smartcity1125.ui.dashboard.bus.BusinitFragment"
+        android:label="巴士详细"
+        tools:layout="@layout/fragment_businit" />
+</navigation>

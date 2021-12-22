@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.me.xinxiFragment">
+
+
+    <TextView
+        android:id="@+id/xinxitv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:text="头像"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/xinxitv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="昵称"
+        app:layout_constraintEnd_toEndOf="@+id/xinxitv1"
+        app:layout_constraintStart_toStartOf="@+id/xinxitv1"
+        app:layout_constraintTop_toBottomOf="@+id/xinxitv1" />
+
+    <TextView
+        android:id="@+id/xinxitv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="性别"
+        app:layout_constraintEnd_toEndOf="@+id/xinxitv1"
+        app:layout_constraintStart_toStartOf="@+id/xinxitv1"
+        app:layout_constraintTop_toBottomOf="@+id/xinxitv2" />
+
+    <TextView
+        android:id="@+id/xinxitv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="证件号"
+        app:layout_constraintEnd_toEndOf="@+id/xinxitv1"
+        app:layout_constraintStart_toStartOf="@+id/xinxitv1"
+        app:layout_constraintTop_toBottomOf="@+id/xinxitv3" />
+
+    <TextView
+        android:id="@+id/xinxitv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="手机号"
+        app:layout_constraintEnd_toEndOf="@+id/xinxitv1"
+        app:layout_constraintStart_toStartOf="@+id/xinxitv1"
+        app:layout_constraintTop_toBottomOf="@+id/xinxitv4" />
+
+    <ImageView
+        android:id="@+id/xinxied1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/xinxitv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/xinxitv1" />
+
+    <EditText
+        android:id="@+id/xinxied2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/xinxitv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/xinxitv2" />
+
+    <EditText
+        android:id="@+id/xinxied3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/xinxitv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/xinxitv3" />
+
+    <EditText
+        android:id="@+id/xinxied4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/xinxitv4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/xinxitv4" />
+
+    <EditText
+        android:id="@+id/xinxied5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/xinxitv5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/xinxitv5" />
+
+    <Button
+        android:id="@+id/xinxibt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="确认"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xinxied5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

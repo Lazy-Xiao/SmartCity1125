@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/busitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="一号线"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/busstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/busitem_name"
+        app:layout_constraintTop_toBottomOf="@+id/busitem_name" />
+
+    <TextView
+        android:id="@+id/busend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="end"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="@+id/busstart"
+        app:layout_constraintStart_toEndOf="@+id/busitem_name"
+        app:layout_constraintTop_toTopOf="@+id/busstart" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="—————>"
+        app:layout_constraintBottom_toBottomOf="@+id/busstart"
+        app:layout_constraintEnd_toEndOf="@+id/busitem_name"
+        app:layout_constraintStart_toStartOf="@+id/busitem_name"
+        app:layout_constraintTop_toTopOf="@+id/busstart" />
+
+    <TextView
+        android:id="@+id/busstartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="@+id/busend"
+        app:layout_constraintStart_toStartOf="@+id/busend"
+        app:layout_constraintTop_toBottomOf="@+id/busend" />
+
+    <TextView
+        android:id="@+id/busendTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/purple_200"
+
+        app:layout_constraintStart_toStartOf="@+id/busstartTime"
+        app:layout_constraintTop_toBottomOf="@+id/busstartTime" />
+
+    <TextView
+        android:id="@+id/busmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/purple_500"
+
+        app:layout_constraintEnd_toEndOf="@+id/busstart"
+        app:layout_constraintStart_toStartOf="@+id/busstart"
+        app:layout_constraintTop_toBottomOf="@+id/busstart" />
+
+    <TextView
+        android:id="@+id/buskm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/purple_500"
+
+        app:layout_constraintEnd_toEndOf="@+id/busmoney"
+        app:layout_constraintStart_toStartOf="@+id/busmoney"
+        app:layout_constraintTop_toBottomOf="@+id/busmoney" />
+</androidx.constraintlayout.widget.ConstraintLayout>
